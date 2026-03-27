@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Athare — Offensive Security Engineer | Bug Bounty Hunter</title>
+    <meta name="description"
+        content="Akash Athare — Offensive Security Engineer specializing in Web, API & Mobile Pentesting. Bug Bounty Hunter, Security Researcher, and Web3 Security Expert. Hire me to secure your systems.">
+    <meta name="keywords"
+        content="penetration testing, bug bounty, cybersecurity, offensive security, VAPT, web3 security, ethical hacker">
+    <meta name="author" content="Akash Athare">
+    <meta property="og:title" content="Akash Athare — Offensive Security Engineer">
+    <meta property="og:description"
+        content="I break systems before attackers do. Offensive Security Engineer & Bug Bounty Hunter.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scanline Overlay -->
+    <div class="scanline-overlay"></div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-rain"></canvas>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">akash</span>
+                <span class="logo-cursor">_</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#services" data-text="Services">Services</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#reports" data-text="Reports">Reports</a></li>
+                <li><a href="#contact" data-text="Contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">akash@kali:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">root@akash:~#</span>
+                        <span class="typed-text" id="typed-text"></span>
+                        <span class="cursor-blink">█</span>
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-name">Akash Athare</span>
+            </h1>
+            <p class="hero-subtitle">Offensive Security Engineer <span class="separator">|</span> Bug Bounty Hunter</p>
+            <p class="hero-tagline">"I break systems before attackers do."</p>
+            <div class="hero-cta">
+                <a href="https://linkedin.com/in/akasha151" target="_blank" rel="noopener" class="btn btn-primary"
+                    id="cta-hire">
+                    <span class="btn-icon">⟩</span> Hire Me
+                </a>
+                <a href="https://medium.com/@C0deRevenant" target="_blank" rel="noopener" class="btn btn-secondary"
+                    id="cta-reports">
+                    <span class="btn-icon">⟩</span> View Reports
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Vulns Reported</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="100">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Subdomains Mapped</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="10000">0</span>
+                    <span class="stat-label">$ Bounty Won</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>scroll_down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT SECTION ═══════════════ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-text="// ABOUT_ME">
+                <span class="section-num">01.</span> About_Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-terminal-line">
+                        <span class="about-prompt">$</span> cat about.txt
+                    </div>
+                    <p class="about-lead">Offensive Security Engineer specializing in <span class="highlight">Web, API,
+                            and Mobile Application</span> security testing.</p>
+                    <p>I started my journey building software — but quickly realized I was more fascinated by <span
+                            class="highlight">breaking things</span> than building them. What began as curiosity turned
+                        into a career hunting vulnerabilities across real-world applications.</p>
+                    <p>From discovering <span class="highlight">critical authentication bypasses</span> and chained
+                        exploits at HackersEra, to building a Web3 antivirus bot that got <span
+                            class="highlight">acquired by an antivirus firm</span>, I've always been at the intersection
+                        of offense and innovation.</p>
+                    <p>Today, I combine manual testing expertise with automated recon pipelines to find what scanners
+                        miss. Whether it's a <span class="highlight">business logic flaw</span> hiding in plain sight or
+                        a <span class="highlight">smart contract vulnerability</span> waiting to be exploited — I find
+                        it.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-card reveal-item">
+                            <div class="highlight-icon">🎯</div>
+                            <h3>Bug Bounty</h3>
+                            <p>50+ valid vulnerabilities reported across real-world apps — privilege escalation, auth
+                                bypass, chained exploits</p>
+                        </div>
+                        <div class="highlight-card reveal-item">
+                            <div class="highlight-icon">🔬</div>
+                            <h3>Security Research</h3>
+                            <p>Deep manual testing aligned with OWASP Top 10, custom payload crafting & attack chaining
+                            </p>
+                        </div>
+                        <div class="highlight-card reveal-item">
+                            <div class="highlight-icon">⛓️</div>
+                            <h3>Web3 Development</h3>
+                            <p>Smart contract development, honeypot detection bot, Chrome extension acquired by AV firm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <span class="info-prompt">~/identity</span>
+                        </div>
+                        <div class="info-body">
+                            <div class="info-line"><span class="info-key">name:</span> <span class="info-val">Akash
+                                    Athare</span></div>
+                            <div class="info-line"><span class="info-key">role:</span> <span class="info-val">Offensive
+                                    Security Engineer</span></div>
+                            <div class="info-line"><span class="info-key">location:</span> <span class="info-val">Pune,
+                                    India</span></div>
+                            <div class="info-line"><span class="info-key">education:</span> <span
+                                    class="info-val">B.Tech CE (SPPU) — 8.55 CGPA</span></div>
+                            <div class="info-line"><span class="info-key">specialization:</span> <span
+                                    class="info-val">Cybersecurity Major (IIT Guwahati)</span></div>
+                            <div class="info-line"><span class="info-key">status:</span> <span
+                                    class="info-val available">Available for hire</span></div>
+                        </div>
+                    </div>
+                    <div class="cert-badges">
+                        <div class="cert-badge">CEH</div>
+                        <div class="cert-badge">CNSP</div>
+                        <div class="cert-badge">OSCP</div>
+                        <div class="cert-badge">GATE '24</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS SECTION ═══════════════ -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-text="// SKILL_SET">
+                <span class="section-num">02.</span> Skill_Set
+            </h2>
+            <div class="skills-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                            class="dot green"></span></div>
+                    <span class="terminal-title">skills_inventory.sh</span>
+                </div>
+                <div class="skills-grid">
+                    <!-- Vulnerability Expertise -->
+                    <div class="skill-category reveal-item">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🎯</span>
+                            <h3>Vulnerability Expertise</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Privilege Escalation</span>
+                            <span class="skill-tag">Broken Access Control</span>
+                            <span class="skill-tag">Authentication Bypass</span>
+                            <span class="skill-tag">Business Logic Exploitation</span>
+                            <span class="skill-tag">Chained Attack Vectors</span>
+                            <span class="skill-tag">IDOR & Insecure References</span>
+                            <span class="skill-tag">SQL Injection</span>
+                            <span class="skill-tag">API Security Misconfigurations</span>
+                            <span class="skill-tag">Session Manipulation</span>
+                            <span class="skill-tag">Race Conditions</span>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="skill-category reveal-item">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🛠️</span>
+                            <h3>Tools & Arsenal</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Burp Suite Pro</span>
+                            <span class="skill-tag">Nmap</span>
+                            <span class="skill-tag">FFUF / Gobuster</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Metasploit</span>
+                            <span class="skill-tag">Sqlmap</span>
+                            <span class="skill-tag">Nuclei</span>
+                            <span class="skill-tag">MobSF</span>
+                            <span class="skill-tag">Hydra</span>
+                            <span class="skill-tag">Sublist3r</span>
+                        </div>
+                    </div>
+                    <!-- Recon -->
+                    <div class="skill-category reveal-item">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">🔍</span>
+                            <h3>Recon & Automation</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Subdomain Enumeration</span>
+                            <span class="skill-tag">Attack Surface Mapping</span>
+                            <span class="skill-tag">Python Automation</span>
+                            <span class="skill-tag">Bash Scripting</span>
+                            <span class="skill-tag">Custom Wordlist Generation</span>
+                            <span class="skill-tag">AI-Assisted Target Prioritization</span>
+                        </div>
+                    </div>
+                    <!-- Methodologies -->
+                    <div class="skill-category reveal-item">
+                        <div class="skill-cat-header">
+                            <span class="cat-icon">📋</span>
+                            <h3>Methodologies & Standards</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OWASP Top 10</span>
+                            <span class="skill-tag">OWASP Testing Guide</span>
+                            <span class="skill-tag">PTES</span>
+                            <span class="skill-tag">Source Code Review</span>
+                            <span class="skill-tag">Vulnerability Disclosure</span>
+                            <span class="skill-tag">PoC Report Writing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE SECTION ═══════════════ -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-text="// EXPERIENCE">
+                <span class="section-num">03.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2025 — Present</div>
+                        <h3 class="timeline-role">Penetration Tester</h3>
+                        <div class="timeline-company">HackersEra · Pune, India</div>
+                        <ul class="timeline-details">
+                            <li>Conduct Web App, API, Mobile (Android/iOS), and Network penetration testing for
+                                enterprise clients</li>
+                            <li>Discovered <span class="highlight">critical authentication bypass, IDOR, business logic
+                                    flaws</span> and chained vulnerabilities leading to high-impact exploitation</li>
+                            <li>Manual testing using <span class="highlight">Burp Suite, Nmap, FFUF, MobSF, ADB</span>
+                                combined with custom payload crafting</li>
+                            <li>Secure source code review to identify security flaws in backend logic and API
+                                implementations</li>
+                            <li>Delivered detailed vulnerability assessment reports with PoC exploits and remediation
+                                guidance</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">VAPT</span><span class="tag">API Security</span><span class="tag">Mobile
+                                Pentest</span><span class="tag">Code Review</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2024 — Oct 2025</div>
+                        <h3 class="timeline-role">Security Researcher</h3>
+                        <div class="timeline-company">Freelance · Remote</div>
+                        <ul class="timeline-details">
+                            <li>Identified and reported <span class="highlight">20+ valid vulnerabilities</span>
+                                including XSS, IDOR, SQLi, auth bypass, and access control flaws</li>
+                            <li>End-to-end reconnaissance and manual VAPT using Burp Suite, Nmap, FFUF, Sublist3r, Hydra
+                            </li>
+                            <li>Web Application testing aligned with <span class="highlight">OWASP Top 10</span>,
+                                analyzing server responses and crafting exploit payloads</li>
+                            <li>Professional vulnerability disclosure reports with PoC demonstrations and mitigation
+                                strategies</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Bug Bounty</span><span class="tag">OWASP</span><span class="tag">Vuln
+                                Disclosure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2024 — May 2024</div>
+                        <h3 class="timeline-role">Blockchain Developer</h3>
+                        <div class="timeline-company">BlockDudes · Delhi NCR, India</div>
+                        <ul class="timeline-details">
+                            <li>Developed a Web3 Chrome extension for detecting honeypot tokens — <span
+                                    class="highlight">later acquired by an antivirus firm</span></li>
+                            <li>Built a Telegram bot for scam token detection, wallet monitoring, and crypto
+                                transactions</li>
+                            <li>Developed and tested smart contracts for token-based utilities</li>
+                            <li><span class="highlight">Runner-up at DoraHacks Hackathon by Akash Network — $10,000
+                                    prize</span></li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Web3</span><span class="tag">Smart Contracts</span><span class="tag">$10K
+                                Winner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2023 — Jan 2024</div>
+                        <h3 class="timeline-role">Software Engineer Intern</h3>
+                        <div class="timeline-company">Palle Services · Bangalore, India</div>
+                        <ul class="timeline-details">
+                            <li>Developed backend APIs using Java and Spring Boot, integrated frontend with ReactJS</li>
+                            <li>Optimized SQL queries and improved database performance for high-traffic applications
+                            </li>
+                            <li>Collaborated with engineering teams to improve application security and reliability</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Java</span><span class="tag">Spring Boot</span><span
+                                class="tag">React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SERVICES SECTION ═══════════════ -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-text="// SERVICES">
+                <span class="section-num">04.</span> Services
+            </h2>
+            <div class="services-grid">
+                <div class="service-card reveal-item">
+                    <div class="service-icon">🛡️</div>
+                    <div class="service-badge">Most Popular</div>
+                    <h3>VAPT — Web App Pentesting</h3>
+                    <p class="service-desc">Comprehensive vulnerability assessment and penetration testing for web
+                        applications, APIs, and mobile apps. Manual testing aligned with OWASP methodology, combined
+                        with automated scanning.</p>
+                    <ul class="service-features">
+                        <li>Full OWASP Top 10 coverage</li>
+                        <li>Manual + automated testing</li>
+                        <li>Detailed PoC reports</li>
+                        <li>Remediation guidance</li>
+                    </ul>
+                    <p class="service-for"><strong>For:</strong> Startups, SaaS companies, enterprises seeking
+                        compliance</p>
+                    <a href="https://t.me/reasearcherr" target="_blank" rel="noopener"
+                        class="btn btn-primary service-cta">Get Started →</a>
+                </div>
+                <div class="service-card reveal-item">
+                    <div class="service-icon">🎯</div>
+                    <h3>Bug Bounty Consulting</h3>
+                    <p class="service-desc">Launch or optimize your bug bounty program. Get expert guidance on scope
+                        definition, triage workflows, and vulnerability management — from someone who's been on both
+                        sides.</p>
+                    <ul class="service-features">
+                        <li>Program setup & scope design</li>
+                        <li>Triage & severity assessment</li>
+                        <li>Hunter perspective insights</li>
+                        <li>Report quality optimization</li>
+                    </ul>
+                    <p class="service-for"><strong>For:</strong> Companies launching or scaling bug bounty programs</p>
+                    <a href="https://t.me/reasearcherr" target="_blank" rel="noopener"
+                        class="btn btn-primary service-cta">Contact Me →</a>
+                </div>
+                <div class="service-card reveal-item">
+                    <div class="service-icon">⛓️</div>
+                    <h3>Web3 Security & Dev</h3>
+                    <p class="service-desc">Smart contract security auditing, honeypot token detection, and Web3
+                        security development. Built tools that were acquired — I know the attack surface intimately.</p>
+                    <ul class="service-features">
+                        <li>Smart contract review</li>
+                        <li>Token security analysis</li>
+                        <li>DeFi security assessment</li>
+                        <li>Security tool development</li>
+                    </ul>
+                    <p class="service-for"><strong>For:</strong> Web3 projects, token launches, DeFi protocols</p>
+                    <a href="https://t.me/reasearcherr" target="_blank" rel="noopener"
+                        class="btn btn-primary service-cta">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SHOP SECTION ═══════════════ -->
+    <section class="section shop" id="shop">
+        <div class="container">
+            <h2 class="section-title" data-text="// DIGITAL_STORE">
+                <span class="section-num">05.</span> Digital_Store
+            </h2>
+            <div class="shop-grid">
+                <div class="shop-card reveal-item">
+                    <div class="shop-badge">🔥 Best Seller</div>
+                    <div class="shop-icon">🔧</div>
+                    <h3>Recon Automation Toolkit</h3>
+                    <p>Complete automated reconnaissance framework. Subdomain enumeration, live host detection, attack
+                        surface mapping, and vulnerability scanning — all in one pipeline. Built from real-world bug
+                        bounty experience.</p>
+                    <div class="shop-price">
+                        <span class="price">$49</span>
+                        <span class="price-note">one-time</span>
+                    </div>
+                    <ul class="shop-includes">
+                        <li>✅ Python + Bash scripts</li>
+                        <li>✅ Setup documentation</li>
+                        <li>✅ Lifetime updates</li>
+                        <li>✅ Custom wordlists</li>
+                    </ul>
+                    <a href="https://t.me/reasearcherr" target="_blank" rel="noopener" class="btn btn-primary"
+                        id="buy-toolkit">Buy Now →</a>
+                </div>
+                <div class="shop-card reveal-item">
+                    <div class="shop-icon">📋</div>
+                    <h3>Bug Bounty Checklist</h3>
+                    <p>The exact methodology I use for bug bounty hunting. Covers recon, testing, reporting — organized
+                        by vulnerability class with payloads, tips, and real-world examples from my experience.</p>
+                    <div class="shop-price">
+                        <span class="price">$19</span>
+                        <span class="price-note">one-time</span>
+                    </div>
+                    <ul class="shop-includes">
+                        <li>✅ Interactive HTML guide</li>
+                        <li>✅ 50+ payload examples</li>
+                        <li>✅ OWASP-aligned structure</li>
+                        <li>✅ Regular updates</li>
+                    </ul>
+                    <a href="https://t.me/reasearcherr" target="_blank" rel="noopener" class="btn btn-primary"
+                        id="buy-checklist">Buy Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS SECTION ═══════════════ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-text="// PROJECTS">
+                <span class="section-num">06.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card reveal-item">
+                    <div class="project-header">
+                        <span class="project-icon">📂</span>
+                        <a href="https://github.com/AkashA1511" target="_blank" rel="noopener" class="project-link"
+                            aria-label="View on GitHub">↗</a>
+                    </div>
+                    <h3>Reconix</h3>
+                    <p class="project-subtitle">Automated Bug Bounty Recon Framework</p>
+                    <div class="project-flow">
+                        <div class="flow-step">
+                            <span class="flow-label">Problem</span>
+                            <p>Manual recon is time-consuming and error-prone. Bug bounty hunters need fast,
+                                comprehensive attack surface mapping.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Approach</span>
+                            <p>Built automated pipeline for subdomain enumeration, live host detection, and
+                                vulnerability scanning with AI-assisted analysis.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Result</span>
+                            <p>Enumerated 100+ subdomains per engagement. Identified IDOR & privilege escalation vectors
+                                during recon phase.</p>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Automation</span>
+                    </div>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-header">
+                        <span class="project-icon">📂</span>
+                        <a href="https://github.com/AkashA1511" target="_blank" rel="noopener" class="project-link"
+                            aria-label="View on GitHub">↗</a>
+                    </div>
+                    <h3>Security Monitoring Suite</h3>
+                    <p class="project-subtitle">Detection Engineering with Wazuh</p>
+                    <div class="project-flow">
+                        <div class="flow-step">
+                            <span class="flow-label">Problem</span>
+                            <p>Organizations need real-time threat detection and alerting for SSH brute-force, privilege
+                                escalation, and intrusions.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Approach</span>
+                            <p>Integrated Wazuh SIEM with Suricata IDS rules and VirusTotal API. Built custom detection
+                                logic and Telegram alerting.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Result</span>
+                            <p>Automated detection of brute-force attacks, privilege escalation, and malicious files
+                                with real-time alerting.</p>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Wazuh</span><span class="tag">Suricata</span><span class="tag">Linux</span>
+                    </div>
+                </div>
+                <div class="project-card reveal-item">
+                    <div class="project-header">
+                        <span class="project-icon">📂</span>
+                        <a href="https://github.com/AkashA1511" target="_blank" rel="noopener" class="project-link"
+                            aria-label="View on GitHub">↗</a>
+                    </div>
+                    <h3>Web3 Antivirus Bot</h3>
+                    <p class="project-subtitle">Honeypot & Scam Token Detection</p>
+                    <div class="project-flow">
+                        <div class="flow-step">
+                            <span class="flow-label">Problem</span>
+                            <p>Crypto users lose millions to honeypot tokens and scam contracts. No easy way to verify
+                                token safety before buying.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Approach</span>
+                            <p>Built a Telegram bot + Chrome extension for automated smart contract analysis and
+                                honeypot detection.</p>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-step">
+                            <span class="flow-label">Result</span>
+                            <p>Chrome extension acquired by an antivirus firm. Bot actively screening tokens and
+                                monitoring wallet activity.</p>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span><span class="tag">Web3.js</span><span
+                            class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ REPORTS SECTION ═══════════════ -->
+    <section class="section reports" id="reports">
+        <div class="container">
+            <h2 class="section-title" data-text="// WRITEUPS">
+                <span class="section-num">07.</span> Reports_&_Writeups
+            </h2>
+            <div class="reports-grid">
+                <div class="report-card reveal-item">
+                    <div class="report-severity critical">CRITICAL</div>
+                    <h3>Privilege Escalation via Role Manipulation</h3>
+                    <p>Discovered a critical privilege escalation vulnerability where an attacker could manipulate user
+                        roles to gain unauthorized administrative access, leading to full system compromise.</p>
+                    <div class="report-meta">
+                        <span class="report-impact">Impact: Full Privilege Escalation</span>
+                        <span class="report-type">Published Writeup</span>
+                    </div>
+                    <a href="https://medium.com/@C0deRevenant/privilege-escalation-via-role-manipulation-192ade8dd937"
+                        target="_blank" rel="noopener" class="report-link">Read on Medium →</a>
+                </div>
+                <div class="report-card reveal-item">
+                    <div class="report-severity high">$700 BOUNTY</div>
+                    <h3>How I Discovered a $700 CSRF Vulnerability</h3>
+                    <p>Found a high-impact CSRF vulnerability, earned a $700 bounty, and then recreated the entire
+                        vulnerability as a hands-on security lab for educational purposes.</p>
+                    <div class="report-meta">
+                        <span class="report-impact">Impact: Account Takeover via CSRF</span>
+                        <span class="report-type">Published Writeup + Lab</span>
+                    </div>
+                    <a href="https://medium.com/@C0deRevenant/how-i-discovered-a-700-csrf-vulnerability-and-recreated-it-as-a-security-lab-7a2e0a80eb92"
+                        target="_blank" rel="noopener" class="report-link">Read on Medium →</a>
+                </div>
+                <div class="report-card reveal-item">
+                    <div class="report-severity critical">CRITICAL</div>
+                    <h3>Authentication Bypass via Token Manipulation</h3>
+                    <p>Discovered a critical authentication bypass vulnerability allowing unauthorized access to admin
+                        endpoints through JWT token manipulation and flawed session validation.</p>
+                    <div class="report-meta">
+                        <span class="report-impact">Impact: Full Account Takeover</span>
+                        <span class="report-type">Bug Bounty Report</span>
+                    </div>
+                    <a href="https://medium.com/@C0deRevenant" target="_blank" rel="noopener" class="report-link">Read
+                        Writeup →</a>
+                </div>
+                <div class="report-card reveal-item">
+                    <div class="report-severity high">HIGH</div>
+                    <h3>Chained IDOR to PII Exposure</h3>
+                    <p>Identified an IDOR vulnerability in user profile endpoints that, when chained with an information
+                        disclosure flaw, led to exposure of sensitive personal data of all platform users.</p>
+                    <div class="report-meta">
+                        <span class="report-impact">Impact: Mass Data Exposure</span>
+                        <span class="report-type">Vulnerability Disclosure</span>
+                    </div>
+                    <a href="https://medium.com/@C0deRevenant" target="_blank" rel="noopener" class="report-link">Read
+                        Writeup →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ═══════════════ FAKE TERMINAL ═══════════════ -->
+    <section class="section terminal-section" id="terminal">
+        <div class="container">
+            <h2 class="section-title" data-text="// TERMINAL">
+                <span class="section-num">⌨</span> Interactive_Terminal
+            </h2>
+            <div class="fake-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots"><span class="dot red"></span><span class="dot yellow"></span><span
+                            class="dot green"></span></div>
+                    <span class="terminal-title">akash@portfolio:~$</span>
+                </div>
+                <div class="terminal-output" id="terminal-output">
+                    <div class="terminal-line"><span class="terminal-green">Welcome to Akash's terminal.</span></div>
+                    <div class="terminal-line">Type <span class="terminal-green">'help'</span> for available commands.
+                    </div>
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">visitor@akash:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false"
+                        placeholder="Type a command...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT SECTION ═══════════════ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-text="// CONTACT">
+                <span class="section-num">08.</span> Get_In_Touch
+            </h2>
+            <p class="contact-subtitle">Available for <span class="highlight">freelance projects</span> & <span
+                    class="highlight">full-time roles</span>. Let's build something secure together.</p>
+            <div class="contact-grid">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="hire">💼 Hiring / Job Offer</option>
+                            <option value="freelance">🎯 Freelance Project</option>
+                            <option value="bounty">🐛 Bug Bounty Collab</option>
+                            <option value="consulting">🛡️ Security Consulting</option>
+                            <option value="other">💬 Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+                        <span class="btn-icon">⟩</span> Send Message
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Connect With Me</h3>
+                        <div class="contact-links">
+                            <a href="mailto:akashworks151@gmail.com" class="contact-link" id="link-email">
+                                <span class="link-icon">📧</span>
+                                <span class="link-text">akashworks151@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/AkashA1511" target="_blank" rel="noopener" class="contact-link"
+                                id="link-github">
+                                <span class="link-icon">💻</span>
+                                <span class="link-text">github.com/AkashA1511</span>
+                            </a>
+                            <a href="https://linkedin.com/in/akasha151" target="_blank" rel="noopener"
+                                class="contact-link" id="link-linkedin">
+                                <span class="link-icon">🔗</span>
+                                <span class="link-text">linkedin.com/in/akasha151</span>
+                            </a>
+                            <a href="https://twitter.com/akasha151" target="_blank" rel="noopener" class="contact-link"
+                                id="link-twitter">
+                                <span class="link-icon">🐦</span>
+                                <span class="link-text">@akasha151</span>
+                            </a>
+                            <a href="https://t.me/reasearcherr" target="_blank" rel="noopener" class="contact-link"
+                                id="link-telegram">
+                                <span class="link-icon">✈️</span>
+                                <span class="link-text">@reasearcherr</span>
+                            </a>
+                            <a href="https://medium.com/@C0deRevenant" target="_blank" rel="noopener"
+                                class="contact-link" id="link-medium">
+                                <span class="link-icon">✍️</span>
+                                <span class="link-text">medium.com/@C0deRevenant</span>
+                            </a>
+                            <a href="https://akasha1511.github.io/" target="_blank" rel="noopener" class="contact-link"
+                                id="link-blog">
+                                <span class="link-icon">📝</span>
+                                <span class="link-text">Security Blog</span>
+                            </a>
+                            <a href="https://www.youtube.com/@c0derevenant" target="_blank" rel="noopener"
+                                class="contact-link" id="link-youtube">
+                                <span class="link-icon">🎬</span>
+                                <span class="link-text">youtube.com/@c0derevenant</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="availability-card">
+                        <div class="avail-dot"></div>
+                        <span>Currently available for opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ LIVE HACKING FEED ═══════════════ -->
+    <div class="hacking-feed" id="hacking-feed">
+        <div class="feed-label">LIVE FEED</div>
+        <div class="feed-content" id="feed-content"></div>
+    </div>
+
+    <!-- ═══════════════ VISITOR COUNTER ═══════════════ -->
+    <div class="visitor-counter" id="visitor-counter">
+        <span class="counter-label">visitors:</span>
+        <span class="counter-num" id="counter-num">0000</span>
+    </div>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">[</span><span class="logo-text">akash</span><span
+                        class="logo-cursor">_</span><span class="logo-bracket">]</span>
+                </div>
+                <p class="footer-text">Designed & built by Akash Athare. Breaking & securing the web.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/AkashA1511" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/akasha151" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://twitter.com/akasha151" target="_blank" rel="noopener">Twitter</a>
+                    <a href="mailto:akashworks151@gmail.com">Email</a>
+                </div>
+                <p class="footer-copy">© 2025 Akash Athare. All rights reserved. <span class="easter-egg-hint"
+                        title="Try typing 'matrix' in the terminal">🥚</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
